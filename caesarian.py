@@ -12,8 +12,8 @@ def caesarian(shift_by, word_list):
                     shifted.append(chr((ord(char) - ord('A') + shift_by) % 26 + ord('A')))
                 else:
                     shifted.append(chr((ord(char) - ord('a') + shift_by) % 26 + ord('a')))
-        else:
-            shifted.append(char)
+            else:
+                shifted.append(char)
         shifted_word = ''.join(shifted)
         shifted_args.append(shifted_word)
     return shifted_args
